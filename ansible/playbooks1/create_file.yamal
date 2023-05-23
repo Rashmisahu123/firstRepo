@@ -1,0 +1,9 @@
+---
+- name: thisplaybook will create afile
+  hosts: all
+  become:true
+  tasks:
+  -name: create a file
+   file
+     path: /home/ubuntu/r.txt
+     state: touch 

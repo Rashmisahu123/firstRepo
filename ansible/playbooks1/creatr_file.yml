@@ -1,0 +1,9 @@
+---
+- name: this playbook will create a file
+  hosts: all
+  become: true
+  tasks: 
+   - name: create a file
+     file:
+       path: /home/ubantu/subject.txt
+       state: touch  
