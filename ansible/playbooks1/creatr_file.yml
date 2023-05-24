@@ -5,5 +5,5 @@
   tasks: 
    - name: create a file
      file:
-       path: /home/ubantu/subject.txt
+       path: /home/ubuntu/subject.txt
        state: touch  
