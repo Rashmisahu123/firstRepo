@@ -5,7 +5,7 @@ metadata:
   name: nginx-replicaset
 spec:
   replicas: 3
-  selectoe:
+  selector:
     matachLabels:
     app: nginx
   template: 
