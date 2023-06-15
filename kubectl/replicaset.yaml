@@ -9,7 +9,7 @@ spec:
     matachLabels:
     app: nginx
   template: 
-    metadeta:
+    metadata:
       labels:
       app: nginx
     spec:
