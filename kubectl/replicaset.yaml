@@ -1,0 +1,10 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: K8s-nginx
+  spec:
+    containers:
+      - name: nginx-container
+        image: nginx%
+        

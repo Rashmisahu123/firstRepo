@@ -1,0 +1,11 @@
+---
+- name: create folder
+  hosts: your_target_host
+  gather_facts:false
+
+  tasks:
+   - name: create folder
+     file:
+      path: /path/to/folder # specify the path of the folder to be created
+      state: directory
+      mode: "0755" # set the desired permission for the foder {optional}
