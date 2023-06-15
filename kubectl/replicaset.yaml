@@ -11,8 +11,8 @@ spec:
   template: 
     metadeta:
       labels:
-      app:nginx
-    spec:         
+      app: nginx
+    spec:
       containers:
         - name: nginx-container
           image: nginx
