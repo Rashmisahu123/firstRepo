@@ -1,10 +1,19 @@
 ---
-apiVersion: app/v1
-kind: Pod
+apiVersion: apps/v1
+kind: ReplicaSet
 metadata:
-  name: K8s-nginx
+  name: nginx-replicaset
   spec:
+    replicas: 3
+    selectoe:
+       matachLabels:
+         app: nginx
+    template: 
+      metadeta:
+        labels:
+          app:nginx
+      spec:         
     containers:
       - name: nginx-container
-        image: nginx%
+        image: nginx
         
